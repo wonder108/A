@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"shit1\startup_stm32f103xb.o"
+"shit1\main.o"
+"shit1\stm32f1xx_it.o"
+"shit1\stm32f1xx_hal_msp.o"
+"shit1\stm32f1xx_hal_gpio_ex.o"
+"shit1\stm32f1xx_hal.o"
+"shit1\stm32f1xx_hal_rcc.o"
+"shit1\stm32f1xx_hal_rcc_ex.o"
+"shit1\stm32f1xx_hal_gpio.o"
+"shit1\stm32f1xx_hal_dma.o"
+"shit1\stm32f1xx_hal_cortex.o"
+"shit1\stm32f1xx_hal_pwr.o"
+"shit1\stm32f1xx_hal_flash.o"
+"shit1\stm32f1xx_hal_flash_ex.o"
+"shit1\stm32f1xx_hal_exti.o"
+"shit1\system_stm32f1xx.o"
+--strict --scatter "shit1\shit1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "shit1.map" -o shit1\shit1.axf
